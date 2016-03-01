@@ -1,7 +1,9 @@
 ## Damn Vulnerable Web App Vagrant environment
+[Damn Vulnerable Web App](https://github.com/RandomStorm/DVWA) vagrant things. Should make bootstrapping a new instance for testing much easier..
+
 ### requirements
 - vagrant w/ Virtualbox guest additions
-- ubuntu14.04
+- ubuntu14.04 vagrant box
 
 ```
 $ git clone https://github.com/dustyfresh/vagrant-dvwa.git
