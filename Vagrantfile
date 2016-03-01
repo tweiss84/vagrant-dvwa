@@ -1,5 +1,5 @@
 #
-# Vagrant script for setting up a WordPress install on Nginx
+# Vagrant script for setting up a Nginx server with php-fpm and damn vulnerable web app
 #
 # * "THE BEER-WARE LICENSE" (Revision 42):
 # * Dustin Warren (@dustyfresh) wrote this file. As long as you retain this notice you
