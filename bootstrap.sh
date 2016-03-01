@@ -54,5 +54,3 @@ mysql -u root -p"p@ssw0rd" -e "CREATE DATABASE dvwa;"
 if [[ ! -d "/var/www/html" ]]; then mkdir -p /var/www; ln -s /usr/share/nginx/html /var/www/html; chown -R www-data. /var/www/html; fi
 rm /var/www/html/*.html
 cd /var/www/html && git clone https://github.com/RandomStorm/DVWA.git && chown -R www-data. ./ && mv ./DVWA/* . && chmod 777 ./hackable/uploads/; chmod 777 ./external/phpids/0.6/lib/IDS/tmp/phpids_log.txt
-
-reboot
