@@ -12,3 +12,11 @@ $ cd vagrant-dvwa && vagrant up
 $ vagrant ssh
 vagrant@dvwa:~$ ip a
 ```
+user: vagrant
+password: vagrant
+
+DVWA 
+usr admin
+pwd password
+
+Once inside the DVWA set the security setting to low.

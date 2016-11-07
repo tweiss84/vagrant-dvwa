@@ -14,13 +14,14 @@ Vagrant.configure("2") do |config|
 	config.vm.box = 'ubuntu/trusty64'
 	config.vm.box_url = ''
 	#config.vm.network 'public_network'
+	config.vm.network :forwarded_port, guest: 80, host: 8080
 	
     config.vm.define :dvwa do |dvwa|
 		dvwa.vm.provider :virtualbox do |v|
 			v.name = "dvwa.dev"
 			v.customize ["modifyvm", :id, "--memory", "1024", "--cpus", 4]
 		end
-		dvwa.vm.network :public_network
+		# dvwa.vm.network :public_network
 		dvwa.vm.hostname = "dvwa.dev"
 		dvwa.vm.provision :shell, :path => "bootstrap.sh"
 	end
